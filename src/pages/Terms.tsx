@@ -15,7 +15,7 @@ export default function Terms() {
           title: '1. PREAMBLE',
           paragraphs: [
             'These General Terms of Use (hereinafter the "Terms") aim to define the terms and conditions under which the Plouf Habitudes mobile application (hereinafter the "Application") is made available and used by any user.',
-            'The Application is published by:\nCompany name / Publisher: Noé Calmes\nLegal form: Micro Enterprise\nContact email: support@ploufhabitudes.app',
+            'The Application is published by:\nCompany name / Publisher: Noé Calmes\nLegal form: Micro Enterprise\nContact email: support@plouff-habitudes.com',
             'The Application is intended for worldwide use. Certain provisions may vary according to applicable local legislation.'
           ]
         },
@@ -147,7 +147,7 @@ export default function Terms() {
           title: '1. PRÉAMBULE',
           paragraphs: [
             'Les présentes Conditions Générales d\'Utilisation (ci-après les « CGU ») ont pour objet de définir les modalités et conditions dans lesquelles l\'application mobile Plouf Habitudes (ci-après l\'« Application ») est mise à disposition et utilisée par tout utilisateur.',
-            'L\'Application est éditée par :\nNom de la société / Éditeur : Noé Calmes\nForme juridique : Micro Entreprise\nEmail de contact : support@ploufhabitudes.app',
+            'L\'Application est éditée par :\nNom de la société / Éditeur : Noé Calmes\nForme juridique : Micro Entreprise\nEmail de contact : support@plouff-habitudes.com',
             'L\'Application est destinée à être utilisée dans le monde entier. Certaines dispositions peuvent varier selon la législation locale applicable.'
           ]
         },
@@ -295,7 +295,7 @@ export default function Terms() {
                 <p key={pIndex} className={`leading-relaxed ${pIndex > 0 ? 'mt-3' : ''}`}>
                   {paragraph.split('\n').map((line, lIndex) => (
                     <span key={lIndex}>
-                      {line.includes('Noé Calmes') || line.includes('support@ploufhabitudes.app') ? (
+                      {line.includes('Noé Calmes') || line.includes('support@plouff-habitudes.com') ? (
                         <strong>{line}</strong>
                       ) : (
                         line
@@ -320,8 +320,8 @@ export default function Terms() {
 
               {index === text.sections.length - 1 && (
                 <p className="leading-relaxed mt-3">
-                  Email: <a href="mailto:support@ploufhabitudes.app" className="text-plouf-button-bg hover:underline font-semibold">
-                    support@ploufhabitudes.app
+                  Email: <a href="mailto:support@plouff-habitudes.com" className="text-plouf-button-bg hover:underline font-semibold">
+                    support@plouff-habitudes.com
                   </a>
                 </p>
               )}
@@ -329,7 +329,7 @@ export default function Terms() {
           ))}
         </div>
       </div>
-      <Footer lang={lang} />
+      <Footer />
     </div>
   );
 }

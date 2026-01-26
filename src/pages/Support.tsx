@@ -55,10 +55,10 @@ export default function Support() {
             <div className="bg-plouf-background-secondary rounded-xl p-5 inline-flex items-center gap-3 mb-4">
               <Mail size={24} className="text-plouf-title" />
               <a
-                href="mailto:support@ploufhabitudes.app"
+                href="mailto:support@plouff-habitudes.com"
                 className="text-plouf-title font-semibold text-lg"
               >
-                support@ploufhabitudes.app
+                support@plouff-habitudes.com
               </a>
             </div>
             <p className="text-plouf-subtitle">
@@ -76,7 +76,7 @@ export default function Support() {
           </section>
         </div>
       </div>
-      <Footer lang={lang} />
+      <Footer />
     </div>
   );
 }

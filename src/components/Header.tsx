@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/image/logo.png';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +16,7 @@ export default function Header() {
     <header className="bg-plouf-card sticky top-0 z-50 border-b border-plouf-border shadow-soft">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/">
-          <img src={logo} alt="Plouf Habitudes Logo" className="h-7" />
+          <span className="text-2xl font-bold text-plouf-title">Plouf Habitudes</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-6">

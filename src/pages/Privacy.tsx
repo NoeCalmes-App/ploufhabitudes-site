@@ -22,7 +22,7 @@ export default function Privacy() {
           title: '2. DATA CONTROLLER',
           paragraphs: [
             'The controller of personal data is:',
-            'Company name / Publisher: Noé Calmes\nLegal form: Micro Enterprise\nContact email: support@ploufhabitudes.app',
+            'Company name / Publisher: Noé Calmes\nLegal form: Micro Enterprise\nContact email: support@plouff-habitudes.com',
             'For any question relating to personal data, the User can contact the publisher at the address indicated above.'
           ]
         },
@@ -158,7 +158,7 @@ export default function Privacy() {
           title: '2. RESPONSABLE DU TRAITEMENT',
           paragraphs: [
             'Le responsable du traitement des données personnelles est :',
-            'Nom de la société / Éditeur : Noé Calmes\nForme juridique : Micro Entreprise\nEmail de contact : support@ploufhabitudes.app',
+            'Nom de la société / Éditeur : Noé Calmes\nForme juridique : Micro Entreprise\nEmail de contact : support@plouff-habitudes.com',
             'Pour toute question relative aux données personnelles, l\'Utilisateur peut contacter l\'éditeur à l\'adresse indiquée ci-dessus.'
           ]
         },
@@ -302,7 +302,7 @@ export default function Privacy() {
                 <p key={pIndex} className={`leading-relaxed ${pIndex > 0 ? 'mt-3' : ''}`}>
                   {paragraph.split('\n').map((line, lIndex) => (
                     <span key={lIndex}>
-                      {line.includes('Noé Calmes') || line.includes('support@ploufhabitudes.app') ? (
+                      {line.includes('Noé Calmes') || line.includes('support@plouff-habitudes.com') ? (
                         <strong>{line}</strong>
                       ) : (
                         line
@@ -324,8 +324,8 @@ export default function Privacy() {
               )}
               {index === text.sections.length - 1 && (
                 <p className="leading-relaxed mt-3">
-                  Email: <a href="mailto:support@ploufhabitudes.app" className="text-plouf-button-bg hover:underline font-semibold">
-                    support@ploufhabitudes.app
+                  Email: <a href="mailto:support@plouff-habitudes.com" className="text-plouf-button-bg hover:underline font-semibold">
+                    support@plouff-habitudes.com
                   </a>
                 </p>
               )}
@@ -333,7 +333,7 @@ export default function Privacy() {
           ))}
         </div>
       </div>
-      <Footer lang={lang} />
+      <Footer />
     </div>
   );
 }

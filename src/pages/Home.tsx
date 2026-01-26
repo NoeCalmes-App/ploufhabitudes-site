@@ -17,7 +17,7 @@ export default function Home() {
       <Features lang={lang} />
       <Screenshots lang={lang} />
       <FrenchSection lang={lang} />
-      <Footer lang={lang} />
+      <Footer />
     </div>
   );
 }

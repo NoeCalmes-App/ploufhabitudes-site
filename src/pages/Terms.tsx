@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export default function Terms() {
-  const { lang, setLang } = useContext(LanguageContext);
+  const { lang } = useContext(LanguageContext);
 
   const content = {
     en: {
@@ -277,7 +277,7 @@ export default function Terms() {
 
   return (
     <div className="min-h-screen bg-plouf-background">
-      <Header lang={lang} setLang={setLang} />
+      <Header />
 
       <div className="max-w-4xl mx-auto px-6 py-12">
         <h1 className="text-2xl md:text-4xl font-bold text-plouf-title mb-2">{text.title}</h1>

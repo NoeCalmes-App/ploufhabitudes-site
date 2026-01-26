@@ -8,11 +8,11 @@ import FrenchSection from '../components/FrenchSection';
 import Footer from '../components/Footer';
 
 export default function Home() {
-  const { lang, setLang } = useContext(LanguageContext);
+  const { lang } = useContext(LanguageContext);
 
   return (
     <div className="min-h-screen bg-white">
-      <Header lang={lang} setLang={setLang} />
+      <Header />
       <Hero lang={lang} />
       <Features lang={lang} />
       <Screenshots lang={lang} />

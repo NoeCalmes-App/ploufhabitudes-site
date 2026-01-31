@@ -6,7 +6,7 @@ export default function Footer() {
     privacy: 'Confidentialité',
     terms: 'Conditions',
     support: 'Support',
-    copyright: '© 2025 Plouf Habitudes. Tous droits réservés.'
+    copyright: '© 2025 Plouff Habitudes. Tous droits réservés.'
   };
 
   return (
@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-3xl font-bold text-plouf-title">Plouf Habitudes</span>
+            <span className="text-3xl font-bold text-plouf-title">Plouff Habitudes</span>
           </div>
           <div className="flex flex-wrap justify-center gap-6 text-sm">
             <Link to="/privacy" className="text-plouf-subtitle hover:text-plouf-title transition-colors">

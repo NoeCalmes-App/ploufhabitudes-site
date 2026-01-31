@@ -71,7 +71,7 @@ export default function Hero({ lang }: HeroProps) {
           </div>
 
           <div className="order-2">
-            <img src={appLogo} alt="Plouf Habitudes App" className="w-52 h-52 md:w-72 md:h-72 rounded-2xl mx-auto shadow-xl" />
+            <img src={appLogo} alt="Plouff Habitudes App" className="w-52 h-52 md:w-72 md:h-72 rounded-2xl mx-auto shadow-xl" />
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export default function Terms() {
         {
           title: '1. PREAMBLE',
           paragraphs: [
-            'These General Terms of Use (hereinafter the "Terms") aim to define the terms and conditions under which the Plouf Habitudes mobile application (hereinafter the "Application") is made available and used by any user.',
+            'These General Terms of Use (hereinafter the "Terms") aim to define the terms and conditions under which the Plouff Habitudes mobile application (hereinafter the "Application") is made available and used by any user.',
             'The Application is published by:\nCompany name / Publisher: Noé Calmes\nLegal form: Micro Enterprise\nContact email: support@plouff-habitudes.com',
             'The Application is intended for worldwide use. Certain provisions may vary according to applicable local legislation.'
           ]
@@ -22,7 +22,7 @@ export default function Terms() {
         {
           title: '2. DEFINITIONS',
           paragraphs: [
-            'Application: the Plouf Habitudes mobile application.',
+            'Application: the Plouff Habitudes mobile application.',
             'User: any individual using the Application.',
             'Account: personal space created by the User.',
             'Services: all features offered by the Application.',
@@ -40,7 +40,7 @@ export default function Terms() {
         {
           title: '4. APPLICATION DESCRIPTION',
           paragraphs: [
-            'Plouf Habitudes is a habit tracking application aimed at helping users build and maintain positive daily routines.',
+            'Plouff Habitudes is a habit tracking application aimed at helping users build and maintain positive daily routines.',
             'The concept is based on:'
           ],
           list: [
@@ -146,7 +146,7 @@ export default function Terms() {
         {
           title: '1. PRÉAMBULE',
           paragraphs: [
-            'Les présentes Conditions Générales d\'Utilisation (ci-après les « CGU ») ont pour objet de définir les modalités et conditions dans lesquelles l\'application mobile Plouf Habitudes (ci-après l\'« Application ») est mise à disposition et utilisée par tout utilisateur.',
+            'Les présentes Conditions Générales d\'Utilisation (ci-après les « CGU ») ont pour objet de définir les modalités et conditions dans lesquelles l\'application mobile Plouff Habitudes (ci-après l\'« Application ») est mise à disposition et utilisée par tout utilisateur.',
             'L\'Application est éditée par :\nNom de la société / Éditeur : Noé Calmes\nForme juridique : Micro Entreprise\nEmail de contact : support@plouff-habitudes.com',
             'L\'Application est destinée à être utilisée dans le monde entier. Certaines dispositions peuvent varier selon la législation locale applicable.'
           ]
@@ -154,7 +154,7 @@ export default function Terms() {
         {
           title: '2. DÉFINITIONS',
           paragraphs: [
-            'Application : l\'application mobile Plouf Habitudes.',
+            'Application : l\'application mobile Plouff Habitudes.',
             'Utilisateur : toute personne physique utilisant l\'Application.',
             'Compte : espace personnel créé par l\'Utilisateur.',
             'Services : ensemble des fonctionnalités proposées par l\'Application.',
@@ -172,7 +172,7 @@ export default function Terms() {
         {
           title: '4. DESCRIPTION DE L\'APPLICATION',
           paragraphs: [
-            'Plouf Habitudes est une application de suivi d\'habitudes visant à aider les utilisateurs à construire et maintenir des routines quotidiennes positives.',
+            'Plouff Habitudes est une application de suivi d\'habitudes visant à aider les utilisateurs à construire et maintenir des routines quotidiennes positives.',
             'Le concept repose notamment sur :'
           ],
           list: [

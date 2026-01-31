@@ -10,18 +10,18 @@ export default function Support() {
 
   const content = {
     en: {
-      title: 'Support - Plouf Habitudes',
+      title: 'Support - Plouff Habitudes',
       needHelp: 'Need help?',
-      description: 'Having an issue with the Plouf Habitudes app or have a question? We\'re here to help!',
+      description: 'Having an issue with the Plouff Habitudes app or have a question? We\'re here to help!',
       contactUs: 'Contact us',
       contactDescription: 'Send us an email and we\'ll get back to you as soon as possible:',
       responseTime: 'We typically respond within 1 to 2 business days.',
       backHome: '← Back to home'
     },
     fr: {
-      title: 'Support - Plouf Habitudes',
+      title: 'Support - Plouff Habitudes',
       needHelp: 'Besoin d\'aide ?',
-      description: 'Tu rencontres un problème avec l\'application Plouf Habitudes ou tu as une question ? On est là pour t\'aider !',
+      description: 'Tu rencontres un problème avec l\'application Plouff Habitudes ou tu as une question ? On est là pour t\'aider !',
       contactUs: 'Contacte-nous',
       contactDescription: 'Envoie-nous un email et on te répondra aussi vite que possible :',
       responseTime: 'Nous répondons généralement sous 1 à 2 jours ouvrés.',

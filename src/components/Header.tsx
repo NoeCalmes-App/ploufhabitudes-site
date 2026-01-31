@@ -16,7 +16,7 @@ export default function Header() {
     <header className="bg-plouf-card sticky top-0 z-50 border-b border-plouf-border shadow-soft">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/">
-          <span className="text-2xl font-bold text-plouf-title">Plouf Habitudes</span>
+          <span className="text-2xl font-bold text-plouf-title">Plouff Habitudes</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-6">

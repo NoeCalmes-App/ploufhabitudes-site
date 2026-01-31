@@ -14,8 +14,8 @@ export default function Privacy() {
         {
           title: '1. PREAMBLE',
           paragraphs: [
-            'This Privacy Policy aims to inform users of the Plouf Habitudes mobile application (hereinafter the "Application") about how their personal data is collected, used and protected.',
-            'Plouf Habitudes attaches particular importance to respect for privacy and processes personal data in accordance with the General Data Protection Regulation (EU) 2016/679 ("GDPR") and applicable French legislation.'
+            'This Privacy Policy aims to inform users of the Plouff Habitudes mobile application (hereinafter the "Application") about how their personal data is collected, used and protected.',
+            'Plouff Habitudes attaches particular importance to respect for privacy and processes personal data in accordance with the General Data Protection Regulation (EU) 2016/679 ("GDPR") and applicable French legislation.'
           ]
         },
         {
@@ -150,8 +150,8 @@ export default function Privacy() {
         {
           title: '1. PRÉAMBULE',
           paragraphs: [
-            'La présente Politique de Confidentialité a pour objet d\'informer les utilisateurs de l\'application mobile Plouf Habitudes (ci-après l\'« Application ») sur la manière dont leurs données personnelles sont collectées, utilisées et protégées.',
-            'Plouf Habitudes accorde une importance particulière au respect de la vie privée et traite les données personnelles conformément au Règlement Général sur la Protection des Données (UE) 2016/679 (« RGPD ») et à la législation française applicable.'
+            'La présente Politique de Confidentialité a pour objet d\'informer les utilisateurs de l\'application mobile Plouff Habitudes (ci-après l\'« Application ») sur la manière dont leurs données personnelles sont collectées, utilisées et protégées.',
+            'Plouff Habitudes accorde une importance particulière au respect de la vie privée et traite les données personnelles conformément au Règlement Général sur la Protection des Données (UE) 2016/679 (« RGPD ») et à la législation française applicable.'
           ]
         },
         {

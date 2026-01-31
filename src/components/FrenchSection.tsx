@@ -18,13 +18,13 @@ export default function FrenchSection({ lang }: FrenchSectionProps) {
   const content = {
     en: {
       title: 'Ready to transform your daily routine?',
-      description: 'Join thousands of users who have already built lasting habits with Plouf Habitudes. Start small, stay consistent, and watch yourself grow.',
+      description: 'Join thousands of users who have already built lasting habits with Plouff Habitudes. Start small, stay consistent, and watch yourself grow.',
       appStore: 'App Store',
       googlePlay: 'Google Play'
     },
     fr: {
       title: 'Prêt à transformer ta routine quotidienne ?',
-      description: 'Rejoins des milliers d\'utilisateurs qui ont déjà créé des habitudes durables avec Plouf Habitudes. Commence petit, reste régulier, et regarde-toi progresser.',
+      description: 'Rejoins des milliers d\'utilisateurs qui ont déjà créé des habitudes durables avec Plouff Habitudes. Commence petit, reste régulier, et regarde-toi progresser.',
       appStore: 'App Store',
       googlePlay: 'Google Play'
     }

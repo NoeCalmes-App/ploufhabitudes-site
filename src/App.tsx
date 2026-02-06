@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import Support from './pages/Support';
+import DeleteAccount from './pages/DeleteAccount';
 
 export const LanguageContext = createContext<{
   lang: 'en' | 'fr';
@@ -48,6 +49,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/delete-account" element={<DeleteAccount />} />
         </Routes>
       </Router>
     </LanguageContext.Provider>

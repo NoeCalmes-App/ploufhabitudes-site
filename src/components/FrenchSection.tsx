@@ -43,7 +43,7 @@ export default function FrenchSection({ lang }: FrenchSectionProps) {
         </p>
         <div className="flex flex-row gap-2 md:gap-4 w-full md:w-auto justify-center">
           <a
-            href="#"
+            href="https://apps.apple.com/fr/app/plouf-habitudes/id6758303032"
             className="flex-1 md:flex-initial flex items-center justify-center gap-2 md:gap-3 px-4 md:px-6 py-3 md:py-4 bg-plouf-button-bg text-plouf-button-text rounded-xl text-sm md:text-base font-semibold hover:opacity-90 transition-all hover:-translate-y-1 shadow-lg whitespace-nowrap"
           >
             <AppleIcon />

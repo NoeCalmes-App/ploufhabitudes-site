@@ -1,211 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Plouff Habitudes</title>
+  <title>Politique de confidentialité – Plouff Habitudes</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; color: #333; line-height: 1.6; }
-    h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-    h2 { font-size: 1.25rem; margin-top: 2rem; }
-    ul { padding-left: 1.5rem; }
-    a { color: #6c63ff; }
-    .subtitle { color: #888; font-style: italic; margin-bottom: 2rem; }
-    .lang-switch { margin-bottom: 2rem; }
-    .lang-switch a { margin-right: 1rem; text-decoration: none; font-weight: bold; color: #6c63ff; }
-    hr { border: none; border-top: 1px solid #eee; margin: 3rem 0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #fdefeb;
+      color: #3F3A36;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* HEADER */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #F7E1CE;
+      box-shadow: 0 4px 6px -4px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #3F3A36;
+      text-decoration: none;
+    }
+    .header-nav { display: flex; gap: 1.5rem; }
+    .header-nav a {
+      text-decoration: none;
+      color: #7A6F68;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .header-nav a:hover, .header-nav a.active { color: #3F3A36; }
+    @media (max-width: 640px) { .header-nav { display: none; } }
+
+    /* MAIN */
+    main { flex: 1; max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; width: 100%; }
+    h1 { font-size: 2rem; font-weight: 700; color: #3F3A36; margin-bottom: 0.25rem; }
+    .last-update { font-size: 0.875rem; color: #7A6F68; font-style: italic; margin-bottom: 2rem; }
+
+    .card {
+      background: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.05);
+      padding: 2rem;
+    }
+    .section { margin-bottom: 2rem; }
+    .section:last-child { margin-bottom: 0; }
+    h2 { font-size: 1.1rem; font-weight: 700; color: #3F3A36; margin-bottom: 1rem; }
+    p { color: #7A6F68; margin-bottom: 0.75rem; }
+    ul { list-style: disc; padding-left: 1.5rem; color: #7A6F68; }
+    ul li { margin-bottom: 0.4rem; }
+    a { color: #E99483; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    strong { color: #3F3A36; }
+
+    /* LANG SWITCH */
+    .lang-switch {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .lang-btn {
+      background: none;
+      border: 1px solid #F7E1CE;
+      border-radius: 0.5rem;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.875rem;
+      cursor: pointer;
+      color: #7A6F68;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: #E99483;
+      color: #fff;
+      border-color: #E99483;
+    }
+
+    .section-en { display: none; }
+    .section-fr { display: block; }
+
+    /* FOOTER */
+    footer {
+      background: #fdefeb;
+      border-top: 1px solid #F7E1CE;
+      padding: 3rem 1.5rem;
+    }
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .footer-logo { font-size: 1.5rem; font-weight: 700; color: #3F3A36; }
+    .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+    .footer-links a { text-decoration: none; color: #7A6F68; font-size: 0.875rem; transition: color 0.2s; }
+    .footer-links a:hover { color: #3F3A36; }
+    .footer-copy { font-size: 0.875rem; color: #7A6F68; text-align: center; border-top: 1px solid #F7E1CE; padding-top: 1.5rem; width: 100%; }
   </style>
 </head>
 <body>
 
+<header>
+  <div class="header-inner">
+    <a href="/" class="header-logo">Plouff Habitudes</a>
+    <nav class="header-nav">
+      <a href="/privacy" class="active">Confidentialité</a>
+      <a href="/terms">Conditions</a>
+      <a href="/support">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1 id="page-title">Politique de confidentialité</h1>
+  <p class="last-update" id="page-date">Dernière mise à jour : 26 janvier 2025</p>
+
   <div class="lang-switch">
-    <a href="#en">English</a>
-    <a href="#fr">Français</a>
+    <button class="lang-btn active" onclick="setLang('fr')" id="btn-fr">Français</button>
+    <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
   </div>
 
-  <!-- ENGLISH -->
-  <section id="en">
-    <h1>Privacy Policy</h1>
-    <p class="subtitle">Last updated: January 26, 2025 – Plouff Habitudes</p>
+  <div class="card">
 
-    <h2>1. Preamble</h2>
-    <p>This Privacy Policy aims to inform users of the Plouff Habitudes mobile application (hereinafter the "Application") about how their personal data is collected, used and protected.</p>
-    <p>Plouff Habitudes attaches particular importance to respect for privacy and processes personal data in accordance with the General Data Protection Regulation (EU) 2016/679 ("GDPR") and applicable French legislation.</p>
+    <!-- FRANÇAIS -->
+    <div class="section-fr" id="content-fr">
+      <div class="section">
+        <h2>1. Préambule</h2>
+        <p>La présente Politique de Confidentialité a pour objet d'informer les utilisateurs de l'application mobile Plouff Habitudes (ci-après l'« Application ») sur la manière dont leurs données personnelles sont collectées, utilisées et protégées.</p>
+        <p>Plouff Habitudes accorde une importance particulière au respect de la vie privée et traite les données personnelles conformément au Règlement Général sur la Protection des Données (UE) 2016/679 (« RGPD ») et à la législation française applicable.</p>
+      </div>
+      <div class="section">
+        <h2>2. Responsable du traitement</h2>
+        <p>Le responsable du traitement des données personnelles est :</p>
+        <p><strong>Nom de la société / Éditeur :</strong> Noé Calmes<br /><strong>Forme juridique :</strong> Micro Entreprise<br /><strong>Email de contact :</strong> <a href="mailto:support@plouff-habitudes.com">support@plouff-habitudes.com</a></p>
+        <p>Pour toute question relative aux données personnelles, l'Utilisateur peut contacter l'éditeur à l'adresse indiquée ci-dessus.</p>
+      </div>
+      <div class="section">
+        <h2>3. Données personnelles collectées</h2>
+        <p>Selon l'utilisation de l'Application, les données suivantes peuvent être collectées :</p>
+        <ul>
+          <li>Données d'identification : adresse email, identifiant utilisateur, informations liées à la connexion via Apple (Sign in with Apple)</li>
+          <li>Données de compte : préférences utilisateur, paramètres d'habitudes, données de progression</li>
+          <li>Données de paiement : informations liées aux abonnements (sans accès ni stockage des données bancaires)</li>
+          <li>Données techniques : type d'appareil, système d'exploitation, logs, données de performance et de crash</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>4. Finalités du traitement</h2>
+        <p>Les données personnelles sont collectées pour les finalités suivantes :</p>
+        <ul>
+          <li>Fournir et assurer le bon fonctionnement de l'Application</li>
+          <li>Suivre les habitudes et afficher les statistiques de progression</li>
+          <li>Gérer les comptes utilisateurs</li>
+          <li>Gérer les abonnements et les paiements</li>
+          <li>Permettre l'intégration de services tiers (Apple)</li>
+          <li>Améliorer l'expérience utilisateur et la stabilité de l'Application</li>
+          <li>Assurer le support client et répondre aux demandes des Utilisateurs</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>5. Bases légales du traitement</h2>
+        <ul>
+          <li>Le consentement de l'Utilisateur (notifications)</li>
+          <li>L'exécution du contrat liant l'Utilisateur à l'éditeur (utilisation de l'Application et abonnements)</li>
+          <li>Le respect d'obligations légales (facturation, comptabilité)</li>
+          <li>L'intérêt légitime de l'éditeur (sécurité, amélioration du service)</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>6. Destinataires des données</h2>
+        <p>Les données personnelles sont destinées exclusivement à l'éditeur de l'Application. Elles peuvent être transmises à des prestataires techniques agissant en tant que sous-traitants, notamment :</p>
+        <ul>
+          <li>Plateformes de paiement (Apple, Google)</li>
+          <li>Services d'hébergement</li>
+          <li>Services d'analyse et de crash reporting</li>
+        </ul>
+        <p>Ces prestataires sont tenus de respecter la confidentialité et la sécurité des données.</p>
+      </div>
+      <div class="section">
+        <h2>7. Transferts hors Union européenne</h2>
+        <p>Certaines données peuvent être transférées en dehors de l'Union européenne, notamment via des services tiers. Dans ce cas, l'éditeur s'assure que des garanties appropriées sont mises en place conformément au RGPD (clauses contractuelles types, décisions d'adéquation).</p>
+      </div>
+      <div class="section">
+        <h2>8. Durée de conservation</h2>
+        <p>Les données personnelles sont conservées uniquement pendant la durée nécessaire aux finalités pour lesquelles elles sont collectées. Les données de compte sont conservées tant que le Compte est actif. Les données liées aux obligations légales sont conservées conformément aux durées légales en vigueur.</p>
+      </div>
+      <div class="section">
+        <h2>9. Droits des utilisateurs</h2>
+        <p>Conformément au RGPD, l'Utilisateur dispose des droits suivants :</p>
+        <ul>
+          <li>Droit d'accès à ses données</li>
+          <li>Droit de rectification</li>
+          <li>Droit à l'effacement (« droit à l'oubli »)</li>
+          <li>Droit à la limitation du traitement</li>
+          <li>Droit à la portabilité des données</li>
+          <li>Droit d'opposition</li>
+          <li>Droit de retirer son consentement à tout moment</li>
+        </ul>
+        <p>Ces droits peuvent être exercés en contactant l'éditeur à l'adresse indiquée.</p>
+      </div>
+      <div class="section">
+        <h2>10. Sécurité des données</h2>
+        <p>L'éditeur met en œuvre des mesures techniques et organisationnelles appropriées afin de garantir la sécurité et la confidentialité des données personnelles. Toutefois, l'Utilisateur reconnaît qu'aucun système n'est totalement sécurisé.</p>
+      </div>
+      <div class="section">
+        <h2>11. Données des mineurs</h2>
+        <p>L'Application n'est pas destinée aux enfants de moins de 13 ans. Aucune donnée personnelle n'est collectée sciemment auprès de mineurs sans autorisation parentale.</p>
+      </div>
+      <div class="section">
+        <h2>12. Modification de la politique de confidentialité</h2>
+        <p>La présente Politique de Confidentialité peut être modifiée à tout moment. L'Utilisateur sera informé de toute modification substantielle.</p>
+      </div>
+      <div class="section">
+        <h2>13. Réclamation</h2>
+        <p>En cas de litige relatif au traitement des données personnelles, l'Utilisateur peut introduire une réclamation auprès de l'autorité de contrôle compétente, notamment la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>).</p>
+      </div>
+      <div class="section">
+        <h2>14. Contact</h2>
+        <p>Pour toute question relative à la présente Politique de Confidentialité ou à l'exercice des droits RGPD :</p>
+        <p>Email : <a href="mailto:support@plouff-habitudes.com">support@plouff-habitudes.com</a></p>
+      </div>
+    </div>
 
-    <h2>2. Data Controller</h2>
-    <p>The controller of personal data is:</p>
-    <p><strong>Company name / Publisher:</strong> Noé Calmes<br />
-    <strong>Legal form:</strong> Micro Enterprise<br />
-    <strong>Contact email:</strong> <a href="mailto:support@plouff-habitudes.com">support@plouff-habitudes.com</a></p>
-    <p>For any question relating to personal data, the User can contact the publisher at the address indicated above.</p>
+    <!-- ENGLISH -->
+    <div class="section-en" id="content-en">
+      <div class="section">
+        <h2>1. Preamble</h2>
+        <p>This Privacy Policy aims to inform users of the Plouff Habitudes mobile application (hereinafter the "Application") about how their personal data is collected, used and protected.</p>
+        <p>Plouff Habitudes attaches particular importance to respect for privacy and processes personal data in accordance with the General Data Protection Regulation (EU) 2016/679 ("GDPR") and applicable French legislation.</p>
+      </div>
+      <div class="section">
+        <h2>2. Data Controller</h2>
+        <p>The controller of personal data is:</p>
+        <p><strong>Publisher:</strong> Noé Calmes<br /><strong>Legal form:</strong> Micro Enterprise<br /><strong>Contact:</strong> <a href="mailto:support@plouff-habitudes.com">support@plouff-habitudes.com</a></p>
+      </div>
+      <div class="section">
+        <h2>3. Personal Data Collected</h2>
+        <ul>
+          <li>Identification data: email address, user identifier, Sign in with Apple information</li>
+          <li>Account data: user preferences, habit settings, progress data</li>
+          <li>Payment data: subscription-related information (no banking data stored)</li>
+          <li>Technical data: device type, OS, logs, performance and crash data</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>4. Processing Purposes</h2>
+        <ul>
+          <li>Provide and ensure proper operation of the Application</li>
+          <li>Track habits and display progress statistics</li>
+          <li>Manage user accounts and subscriptions</li>
+          <li>Allow integration of third-party services (Apple)</li>
+          <li>Improve user experience and Application stability</li>
+          <li>Provide customer support</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>5. Legal Basis</h2>
+        <ul>
+          <li>User consent (notifications)</li>
+          <li>Performance of the contract (use of the Application and subscriptions)</li>
+          <li>Compliance with legal obligations (billing, accounting)</li>
+          <li>Legitimate interest of the publisher (security, service improvement)</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>6. Data Recipients</h2>
+        <p>Data is intended exclusively for the publisher and may be shared with subcontractors: payment platforms (Apple, Google), hosting services, analytics and crash reporting services.</p>
+      </div>
+      <div class="section">
+        <h2>7. Transfers Outside the EU</h2>
+        <p>Some data may be transferred outside the EU via third-party services. Appropriate safeguards are in place in accordance with GDPR.</p>
+      </div>
+      <div class="section">
+        <h2>8. Retention Period</h2>
+        <p>Account data is kept as long as the account is active. Data related to legal obligations are kept per applicable legal periods.</p>
+      </div>
+      <div class="section">
+        <h2>9. User Rights</h2>
+        <p>Under GDPR: right of access, rectification, erasure, restriction, portability, objection, and to withdraw consent. Contact: <a href="mailto:support@plouff-habitudes.com">support@plouff-habitudes.com</a></p>
+      </div>
+      <div class="section">
+        <h2>10. Data Security</h2>
+        <p>The publisher implements appropriate technical and organizational measures to ensure data security and confidentiality.</p>
+      </div>
+      <div class="section">
+        <h2>11. Children's Data</h2>
+        <p>The Application is not intended for children under 13. No personal data is knowingly collected from minors without parental authorization.</p>
+      </div>
+      <div class="section">
+        <h2>12. Policy Changes</h2>
+        <p>This Privacy Policy may be modified at any time. Users will be informed of any substantial modification.</p>
+      </div>
+      <div class="section">
+        <h2>13. Complaints</h2>
+        <p>Users may file a complaint with the competent supervisory authority, in particular the CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>).</p>
+      </div>
+      <div class="section">
+        <h2>14. Contact</h2>
+        <p>Email: <a href="mailto:support@plouff-habitudes.com">support@plouff-habitudes.com</a></p>
+      </div>
+    </div>
 
-    <h2>3. Personal Data Collected</h2>
-    <p>Depending on the use of the Application, the following data may be collected:</p>
-    <ul>
-      <li>Identification data: email address, user identifier, information related to login via Apple (Sign in with Apple)</li>
-      <li>Account data: user preferences, habit settings, progress data</li>
-      <li>Payment data: subscription-related information (no access or storage of banking data)</li>
-      <li>Technical data: device type, operating system, logs, performance and crash data</li>
-    </ul>
+  </div>
+</main>
 
-    <h2>4. Processing Purposes</h2>
-    <p>Personal data is collected for the following purposes:</p>
-    <ul>
-      <li>Provide and ensure proper operation of the Application</li>
-      <li>Track habits and display progress statistics</li>
-      <li>Manage user accounts</li>
-      <li>Manage subscriptions and payments</li>
-      <li>Allow integration of third-party services (Apple)</li>
-      <li>Improve user experience and Application stability</li>
-      <li>Provide customer support and respond to User requests</li>
-    </ul>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Plouff Habitudes</div>
+    <div class="footer-links">
+      <a href="/privacy">Confidentialité</a>
+      <a href="/terms">Conditions</a>
+      <a href="/support">Support</a>
+    </div>
+    <div class="footer-copy">© 2025 Plouff Habitudes. Tous droits réservés.</div>
+  </div>
+</footer>
 
-    <h2>5. Legal Basis for Processing</h2>
-    <p>Personal data processing is based on the following legal bases:</p>
-    <ul>
-      <li>User consent (notifications)</li>
-      <li>Performance of the contract between the User and the publisher (use of the Application and subscriptions)</li>
-      <li>Compliance with legal obligations (billing, accounting)</li>
-      <li>Legitimate interest of the publisher (security, service improvement)</li>
-    </ul>
-
-    <h2>6. Data Recipients</h2>
-    <p>Personal data is intended exclusively for the Application publisher. They may be transmitted to technical service providers acting as subcontractors, including:</p>
-    <ul>
-      <li>Payment platforms (Apple, Google)</li>
-      <li>Hosting services</li>
-      <li>Analytics and crash reporting services</li>
-    </ul>
-    <p>These providers are required to respect data confidentiality and security.</p>
-
-    <h2>7. Transfers Outside the European Union</h2>
-    <p>Some data may be transferred outside the European Union, particularly via third-party services. In this case, the publisher ensures that appropriate safeguards are in place in accordance with GDPR (standard contractual clauses, adequacy decisions).</p>
-
-    <h2>8. Retention Period</h2>
-    <p>Personal data is kept only for the time necessary for the purposes for which it is collected. Account data is kept as long as the Account is active. Data related to legal obligations are kept in accordance with applicable legal periods.</p>
-
-    <h2>9. User Rights</h2>
-    <p>In accordance with GDPR, the User has the following rights:</p>
-    <ul>
-      <li>Right of access to their data</li>
-      <li>Right of rectification</li>
-      <li>Right to erasure ("right to be forgotten")</li>
-      <li>Right to restriction of processing</li>
-      <li>Right to data portability</li>
-      <li>Right to object</li>
-      <li>Right to withdraw consent at any time</li>
-    </ul>
-    <p>These rights can be exercised by contacting the publisher at the address indicated.</p>
-
-    <h2>10. Data Security</h2>
-    <p>The publisher implements appropriate technical and organizational measures to ensure the security and confidentiality of personal data. However, the User acknowledges that no system is completely secure.</p>
-
-    <h2>11. Children's Data</h2>
-    <p>The Application is not intended for children under 13 years of age. No personal data is knowingly collected from minors without parental authorization.</p>
-
-    <h2>12. Privacy Policy Changes</h2>
-    <p>This Privacy Policy may be modified at any time. The User will be informed of any substantial modification.</p>
-
-    <h2>13. Complaints</h2>
-    <p>In case of dispute relating to the processing of personal data, the User may file a complaint with the competent supervisory authority, in particular the CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>).</p>
-
-    <h2>14. Contact</h2>
-    <p>For any question relating to this Privacy Policy or to the exercise of GDPR rights:</p>
-    <p>Email: <a href="mailto:support@plouff-habitudes.com">support@plouff-habitudes.com</a></p>
-  </section>
-
-  <hr />
-
-  <!-- FRANÇAIS -->
-  <section id="fr">
-    <h1>Politique de confidentialité</h1>
-    <p class="subtitle">Dernière mise à jour : 26 janvier 2025 – Plouff Habitudes</p>
-
-    <h2>1. Préambule</h2>
-    <p>La présente Politique de Confidentialité a pour objet d'informer les utilisateurs de l'application mobile Plouff Habitudes (ci-après l'« Application ») sur la manière dont leurs données personnelles sont collectées, utilisées et protégées.</p>
-    <p>Plouff Habitudes accorde une importance particulière au respect de la vie privée et traite les données personnelles conformément au Règlement Général sur la Protection des Données (UE) 2016/679 (« RGPD ») et à la législation française applicable.</p>
-
-    <h2>2. Responsable du traitement</h2>
-    <p>Le responsable du traitement des données personnelles est :</p>
-    <p><strong>Nom de la société / Éditeur :</strong> Noé Calmes<br />
-    <strong>Forme juridique :</strong> Micro Entreprise<br />
-    <strong>Email de contact :</strong> <a href="mailto:support@plouff-habitudes.com">support@plouff-habitudes.com</a></p>
-    <p>Pour toute question relative aux données personnelles, l'Utilisateur peut contacter l'éditeur à l'adresse indiquée ci-dessus.</p>
-
-    <h2>3. Données personnelles collectées</h2>
-    <p>Selon l'utilisation de l'Application, les données suivantes peuvent être collectées :</p>
-    <ul>
-      <li>Données d'identification : adresse email, identifiant utilisateur, informations liées à la connexion via Apple (Sign in with Apple)</li>
-      <li>Données de compte : préférences utilisateur, paramètres d'habitudes, données de progression</li>
-      <li>Données de paiement : informations liées aux abonnements (sans accès ni stockage des données bancaires)</li>
-      <li>Données techniques : type d'appareil, système d'exploitation, logs, données de performance et de crash</li>
-    </ul>
-
-    <h2>4. Finalités du traitement</h2>
-    <p>Les données personnelles sont collectées pour les finalités suivantes :</p>
-    <ul>
-      <li>Fournir et assurer le bon fonctionnement de l'Application</li>
-      <li>Suivre les habitudes et afficher les statistiques de progression</li>
-      <li>Gérer les comptes utilisateurs</li>
-      <li>Gérer les abonnements et les paiements</li>
-      <li>Permettre l'intégration de services tiers (Apple)</li>
-      <li>Améliorer l'expérience utilisateur et la stabilité de l'Application</li>
-      <li>Assurer le support client et répondre aux demandes des Utilisateurs</li>
-    </ul>
-
-    <h2>5. Bases légales du traitement</h2>
-    <p>Les traitements de données personnelles reposent sur les bases légales suivantes :</p>
-    <ul>
-      <li>Le consentement de l'Utilisateur (notifications)</li>
-      <li>L'exécution du contrat liant l'Utilisateur à l'éditeur (utilisation de l'Application et abonnements)</li>
-      <li>Le respect d'obligations légales (facturation, comptabilité)</li>
-      <li>L'intérêt légitime de l'éditeur (sécurité, amélioration du service)</li>
-    </ul>
-
-    <h2>6. Destinataires des données</h2>
-    <p>Les données personnelles sont destinées exclusivement à l'éditeur de l'Application. Elles peuvent être transmises à des prestataires techniques agissant en tant que sous-traitants, notamment :</p>
-    <ul>
-      <li>Plateformes de paiement (Apple, Google)</li>
-      <li>Services d'hébergement</li>
-      <li>Services d'analyse et de crash reporting</li>
-    </ul>
-    <p>Ces prestataires sont tenus de respecter la confidentialité et la sécurité des données.</p>
-
-    <h2>7. Transferts hors Union européenne</h2>
-    <p>Certaines données peuvent être transférées en dehors de l'Union européenne, notamment via des services tiers. Dans ce cas, l'éditeur s'assure que des garanties appropriées sont mises en place conformément au RGPD (clauses contractuelles types, décisions d'adéquation).</p>
-
-    <h2>8. Durée de conservation</h2>
-    <p>Les données personnelles sont conservées uniquement pendant la durée nécessaire aux finalités pour lesquelles elles sont collectées. Les données de compte sont conservées tant que le Compte est actif. Les données liées aux obligations légales sont conservées conformément aux durées légales en vigueur.</p>
-
-    <h2>9. Droits des utilisateurs</h2>
-    <p>Conformément au RGPD, l'Utilisateur dispose des droits suivants :</p>
-    <ul>
-      <li>Droit d'accès à ses données</li>
-      <li>Droit de rectification</li>
-      <li>Droit à l'effacement (« droit à l'oubli »)</li>
-      <li>Droit à la limitation du traitement</li>
-      <li>Droit à la portabilité des données</li>
-      <li>Droit d'opposition</li>
-      <li>Droit de retirer son consentement à tout moment</li>
-    </ul>
-    <p>Ces droits peuvent être exercés en contactant l'éditeur à l'adresse indiquée.</p>
-
-    <h2>10. Sécurité des données</h2>
-    <p>L'éditeur met en œuvre des mesures techniques et organisationnelles appropriées afin de garantir la sécurité et la confidentialité des données personnelles. Toutefois, l'Utilisateur reconnaît qu'aucun système n'est totalement sécurisé.</p>
-
-    <h2>11. Données des mineurs</h2>
-    <p>L'Application n'est pas destinée aux enfants de moins de 13 ans. Aucune donnée personnelle n'est collectée sciemment auprès de mineurs sans autorisation parentale.</p>
-
-    <h2>12. Modification de la politique de confidentialité</h2>
-    <p>La présente Politique de Confidentialité peut être modifiée à tout moment. L'Utilisateur sera informé de toute modification substantielle.</p>
-
-    <h2>13. Réclamation</h2>
-    <p>En cas de litige relatif au traitement des données personnelles, l'Utilisateur peut introduire une réclamation auprès de l'autorité de contrôle compétente, notamment la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>).</p>
-
-    <h2>14. Contact</h2>
-    <p>Pour toute question relative à la présente Politique de Confidentialité ou à l'exercice des droits RGPD :</p>
-    <p>Email : <a href="mailto:support@plouff-habitudes.com">support@plouff-habitudes.com</a></p>
-  </section>
+<script>
+  function setLang(lang) {
+    document.getElementById('content-fr').style.display = lang === 'fr' ? 'block' : 'none';
+    document.getElementById('content-en').style.display = lang === 'en' ? 'block' : 'none';
+    document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('page-title').textContent = lang === 'fr' ? 'Politique de confidentialité' : 'Privacy Policy';
+    document.getElementById('page-date').textContent = lang === 'fr' ? 'Dernière mise à jour : 26 janvier 2025' : 'Last updated: January 26, 2025';
+  }
+</script>
 
 </body>
 </html>
